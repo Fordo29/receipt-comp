@@ -47,6 +47,10 @@ q:before, q:after {
   content: ‘’;
   content: none;
 }
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -59,14 +63,67 @@ body {
 article {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  margin: 75px;
+  padding: 20px;
+}
+
+hr {
+  border-top: 1px dashed grey;
+  margin: 1em 0;
+  width: 100%;
 }
 
 img {
-  width: 50%;
+  width: 100%;
 }
 
-.card-header,
+h1 {
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  color: #0984e3;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card-body,
 .card-footer {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.desk-details {
+  flex: 2;
+}
+
+.desk-img {
+  flex: 2;
+}
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+
 }
