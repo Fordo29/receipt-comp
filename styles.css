@@ -66,6 +66,7 @@ article {
   background-color: white;
   margin: 75px;
   padding: 20px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
 }
 
 hr {
@@ -100,11 +101,16 @@ p {
   align-items: center;
 }
 
-.card-body,
-.card-footer {
+.card-body {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .desk-details {
@@ -116,14 +122,30 @@ p {
 }
 .button {
   background-color: white;
-  border: none;
+  border: 1px solid #0984e3;
+  border-radius: 50%;
   color: black;
-  padding: 20px;
+  padding: 5px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 22px;
   margin: 4px 2px;
-  border-radius: 50%;
+}
 
+.button1 {
+  background-color: #0984e3;
+  border: 1px solid #0984e3;
+  border-radius: 50%;
+  color: black;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+}
+
+.button-align {
+  text-align: center;
 }
